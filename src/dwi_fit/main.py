@@ -1,9 +1,15 @@
 import click
 
+from dwi_fit.ui import app
+
 
 @click.command()
-def main():
-    click.echo('Hello World!')
+@click.option('--gui/--no-gui', default=False)
+def main(gui):
+    if gui:
+        app.exec()
+    else:
+        click.echo('Hello World!')
 
 
 if __name__ == '__main__':

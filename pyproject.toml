@@ -11,7 +11,8 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "click"
+    "click",
+    "pyQt6"
 ]
 
 [project.scripts]
